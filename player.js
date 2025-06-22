@@ -13,3 +13,13 @@ player.ready(function () {
     player.ima.requestAds();
   });
 });
+
+google.ima.settings.setDebugMode(true);
+
+player.ima.getAdsLoader().addEventListener(
+  google.ima.AdErrorEvent.Type.AD_ERROR,
+  function(e) {
+    console.error('IMA Ad Error:', e.getError());
+  }
+);
+
