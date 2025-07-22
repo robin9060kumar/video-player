@@ -59,12 +59,8 @@
 <script>
   const player = videojs('my-player');
 
-  const adTagUrl = "https://pubads.g.doubleclick.net/gampad/ads?" +
-    "iu=/21775744923/external/single_ad_samples&" +
-    "description_url=https%3A%2F%2Fdevelopers.google.com&" +
-    "env=vp&output=vast&unviewed_position_start=1&" +
-    "sz=640x480&cust_params=sample_ct%3Dlinear&" +
-    "correlator=" + Date.now();
+ const adTagUrl = "https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&description_url=https%3A%2F%2Fexample.com&env=vp&output=vast&unviewed_position_start=1&cust_params=sample_ct%3Dlinear&correlator=";
+
 
   player.ima({
     adTagUrl: adTagUrl,
